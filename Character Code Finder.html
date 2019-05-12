@@ -1,0 +1,356 @@
+
+<!-- saved from url=(0054)http://www.mauvecloud.net/charsets/CharCodeFinder.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Character Code Finder</title>
+<script type="text/javascript">
+var outputtype = "decimal";
+
+htmlRefs = new Object();
+htmlRefs["\u0026"] = "\u0026amp;";
+htmlRefs["\u003c"] = "\u0026lt;";
+htmlRefs["\u003e"] = "\u0026gt;";
+htmlRefs["\u00a0"] = "\u0026nbsp;";
+htmlRefs["\u00a1"] = "\u0026iexcl;";
+htmlRefs["\u00a2"] = "\u0026cent;";
+htmlRefs["\u00a3"] = "\u0026pound;";
+htmlRefs["\u00a4"] = "\u0026curren;";
+htmlRefs["\u00a5"] = "\u0026yen;";
+htmlRefs["\u00a6"] = "\u0026brvbar;";
+htmlRefs["\u00a7"] = "\u0026sect;";
+htmlRefs["\u00a8"] = "\u0026uml;";
+htmlRefs["\u00a9"] = "\u0026copy;";
+htmlRefs["\u00aa"] = "\u0026ordf;";
+htmlRefs["\u00ab"] = "\u0026laquo;";
+htmlRefs["\u00ac"] = "\u0026not;";
+htmlRefs["\u00ad"] = "\u0026shy;";
+htmlRefs["\u00ae"] = "\u0026reg;";
+htmlRefs["\u00af"] = "\u0026macr;";
+htmlRefs["\u00b0"] = "\u0026deg;";
+htmlRefs["\u00b1"] = "\u0026plusmn;";
+htmlRefs["\u00b2"] = "\u0026sup2;";
+htmlRefs["\u00b3"] = "\u0026sup3;";
+htmlRefs["\u00b4"] = "\u0026acute;";
+htmlRefs["\u00b5"] = "\u0026micro;";
+htmlRefs["\u00b6"] = "\u0026para;";
+htmlRefs["\u00b7"] = "\u0026middot;";
+htmlRefs["\u00b8"] = "\u0026cedil;";
+htmlRefs["\u00b9"] = "\u0026sup1;";
+htmlRefs["\u00ba"] = "\u0026ordm;";
+htmlRefs["\u00bb"] = "\u0026raquo;";
+htmlRefs["\u00bc"] = "\u0026frac14;";
+htmlRefs["\u00bd"] = "\u0026frac12;";
+htmlRefs["\u00be"] = "\u0026frac34;";
+htmlRefs["\u00bf"] = "\u0026iquest;";
+htmlRefs["\u00c0"] = "\u0026Agrave;";
+htmlRefs["\u00c1"] = "\u0026Aacute;";
+htmlRefs["\u00c2"] = "\u0026Acirc;";
+htmlRefs["\u00c3"] = "\u0026Atilde;";
+htmlRefs["\u00c4"] = "\u0026Auml;";
+htmlRefs["\u00c5"] = "\u0026Aring;";
+htmlRefs["\u00c6"] = "\u0026AElig;";
+htmlRefs["\u00c7"] = "\u0026Ccedil;";
+htmlRefs["\u00c8"] = "\u0026Egrave;";
+htmlRefs["\u00c9"] = "\u0026Eacute;";
+htmlRefs["\u00ca"] = "\u0026Ecirc;";
+htmlRefs["\u00cb"] = "\u0026Euml;";
+htmlRefs["\u00cc"] = "\u0026Igrave;";
+htmlRefs["\u00cd"] = "\u0026Iacute;";
+htmlRefs["\u00ce"] = "\u0026Icirc;";
+htmlRefs["\u00cf"] = "\u0026Iuml;";
+htmlRefs["\u00d0"] = "\u0026ETH;";
+htmlRefs["\u00d1"] = "\u0026Ntilde;";
+htmlRefs["\u00d2"] = "\u0026Ograve;";
+htmlRefs["\u00d3"] = "\u0026Oacute;";
+htmlRefs["\u00d4"] = "\u0026Ocirc;";
+htmlRefs["\u00d5"] = "\u0026Otilde;";
+htmlRefs["\u00d6"] = "\u0026Ouml;";
+htmlRefs["\u00d7"] = "\u0026times;";
+htmlRefs["\u00d8"] = "\u0026Oslash;";
+htmlRefs["\u00d9"] = "\u0026Ugrave;";
+htmlRefs["\u00da"] = "\u0026Uacute;";
+htmlRefs["\u00db"] = "\u0026Ucirc;";
+htmlRefs["\u00dc"] = "\u0026Uuml;";
+htmlRefs["\u00dd"] = "\u0026Yacute;";
+htmlRefs["\u00de"] = "\u0026THORN;";
+htmlRefs["\u00df"] = "\u0026szlig;";
+htmlRefs["\u00e0"] = "\u0026agrave;";
+htmlRefs["\u00e1"] = "\u0026aacute;";
+htmlRefs["\u00e2"] = "\u0026acirc;";
+htmlRefs["\u00e3"] = "\u0026atilde;";
+htmlRefs["\u00e4"] = "\u0026auml;";
+htmlRefs["\u00e5"] = "\u0026aring;";
+htmlRefs["\u00e6"] = "\u0026aelig;";
+htmlRefs["\u00e7"] = "\u0026ccedil;";
+htmlRefs["\u00e8"] = "\u0026egrave;";
+htmlRefs["\u00e9"] = "\u0026eacute;";
+htmlRefs["\u00ea"] = "\u0026ecirc;";
+htmlRefs["\u00eb"] = "\u0026euml;";
+htmlRefs["\u00ec"] = "\u0026igrave;";
+htmlRefs["\u00ed"] = "\u0026iacute;";
+htmlRefs["\u00ee"] = "\u0026icirc;";
+htmlRefs["\u00ef"] = "\u0026iuml;";
+htmlRefs["\u00f0"] = "\u0026eth;";
+htmlRefs["\u00f1"] = "\u0026ntilde;";
+htmlRefs["\u00f2"] = "\u0026ograve;";
+htmlRefs["\u00f3"] = "\u0026oacute;";
+htmlRefs["\u00f4"] = "\u0026ocirc;";
+htmlRefs["\u00f5"] = "\u0026otilde;";
+htmlRefs["\u00f6"] = "\u0026ouml;";
+htmlRefs["\u00f7"] = "\u0026divide;";
+htmlRefs["\u00f8"] = "\u0026oslash;";
+htmlRefs["\u00f9"] = "\u0026ugrave;";
+htmlRefs["\u00fa"] = "\u0026uacute;";
+htmlRefs["\u00fb"] = "\u0026ucirc;";
+htmlRefs["\u00fc"] = "\u0026uuml;";
+htmlRefs["\u00fd"] = "\u0026yacute;";
+htmlRefs["\u00fe"] = "\u0026thorn;";
+htmlRefs["\u00ff"] = "\u0026yuml;";
+htmlRefs["\u0152"] = "\u0026OElig;";
+htmlRefs["\u0153"] = "\u0026oelig;";
+htmlRefs["\u0160"] = "\u0026Scaron;";
+htmlRefs["\u0161"] = "\u0026scaron;";
+htmlRefs["\u0178"] = "\u0026Yuml;";
+htmlRefs["\u0192"] = "\u0026fnof;";
+htmlRefs["\u02c6"] = "\u0026circ;";
+htmlRefs["\u02dc"] = "\u0026tilde;";
+htmlRefs["\u0391"] = "\u0026Alpha;";
+htmlRefs["\u0392"] = "\u0026Beta;";
+htmlRefs["\u0393"] = "\u0026Gamma;";
+htmlRefs["\u0394"] = "\u0026Delta;";
+htmlRefs["\u0395"] = "\u0026Epsilon;";
+htmlRefs["\u0396"] = "\u0026Zeta;";
+htmlRefs["\u0397"] = "\u0026Eta;";
+htmlRefs["\u0398"] = "\u0026Theta;";
+htmlRefs["\u0399"] = "\u0026Iota;";
+htmlRefs["\u039a"] = "\u0026Kappa;";
+htmlRefs["\u039b"] = "\u0026Lambda;";
+htmlRefs["\u039c"] = "\u0026Mu;";
+htmlRefs["\u039d"] = "\u0026Nu;";
+htmlRefs["\u039e"] = "\u0026Xi;";
+htmlRefs["\u039f"] = "\u0026Omicron;";
+htmlRefs["\u03a0"] = "\u0026Pi;";
+htmlRefs["\u03a1"] = "\u0026Rho;";
+htmlRefs["\u03a3"] = "\u0026Sigma;";
+htmlRefs["\u03a4"] = "\u0026Tau;";
+htmlRefs["\u03a5"] = "\u0026Upsilon;";
+htmlRefs["\u03a6"] = "\u0026Phi;";
+htmlRefs["\u03a7"] = "\u0026Chi;";
+htmlRefs["\u03a8"] = "\u0026Psi;";
+htmlRefs["\u03a9"] = "\u0026Omega;";
+htmlRefs["\u03b1"] = "\u0026alpha;";
+htmlRefs["\u03b2"] = "\u0026beta;";
+htmlRefs["\u03b3"] = "\u0026gamma;";
+htmlRefs["\u03b4"] = "\u0026delta;";
+htmlRefs["\u03b5"] = "\u0026epsilon;";
+htmlRefs["\u03b6"] = "\u0026zeta;";
+htmlRefs["\u03b7"] = "\u0026eta;";
+htmlRefs["\u03b8"] = "\u0026theta;";
+htmlRefs["\u03b9"] = "\u0026iota;";
+htmlRefs["\u03ba"] = "\u0026kappa;";
+htmlRefs["\u03bb"] = "\u0026lambda;";
+htmlRefs["\u03bc"] = "\u0026mu;";
+htmlRefs["\u03bd"] = "\u0026nu;";
+htmlRefs["\u03be"] = "\u0026xi;";
+htmlRefs["\u03bf"] = "\u0026omicron;";
+htmlRefs["\u03c0"] = "\u0026pi;";
+htmlRefs["\u03c1"] = "\u0026rho;";
+htmlRefs["\u03c2"] = "\u0026sigmaf;";
+htmlRefs["\u03c3"] = "\u0026sigma;";
+htmlRefs["\u03c4"] = "\u0026tau;";
+htmlRefs["\u03c5"] = "\u0026upsilon;";
+htmlRefs["\u03c6"] = "\u0026phi;";
+htmlRefs["\u03c7"] = "\u0026chi;";
+htmlRefs["\u03c8"] = "\u0026psi;";
+htmlRefs["\u03c9"] = "\u0026omega;";
+htmlRefs["\u03d1"] = "\u0026thetasym;";
+htmlRefs["\u03d2"] = "\u0026upsih;";
+htmlRefs["\u03d6"] = "\u0026piv;";
+htmlRefs["\u2002"] = "\u0026ensp;";
+htmlRefs["\u2003"] = "\u0026emsp;";
+htmlRefs["\u2009"] = "\u0026thinsp;";
+htmlRefs["\u200c"] = "\u0026zwnj;";
+htmlRefs["\u200d"] = "\u0026zwj;";
+htmlRefs["\u200e"] = "\u0026lrm;";
+htmlRefs["\u200f"] = "\u0026rlm;";
+htmlRefs["\u2013"] = "\u0026ndash;";
+htmlRefs["\u2014"] = "\u0026mdash;";
+htmlRefs["\u2018"] = "\u0026lsquo;";
+htmlRefs["\u2019"] = "\u0026rsquo;";
+htmlRefs["\u201a"] = "\u0026sbquo;";
+htmlRefs["\u201c"] = "\u0026ldquo;";
+htmlRefs["\u201d"] = "\u0026rdquo;";
+htmlRefs["\u201e"] = "\u0026bdquo;";
+htmlRefs["\u2020"] = "\u0026dagger;";
+htmlRefs["\u2021"] = "\u0026Dagger;";
+htmlRefs["\u2022"] = "\u0026bull;";
+htmlRefs["\u2026"] = "\u0026hellip;";
+htmlRefs["\u2030"] = "\u0026permil;";
+htmlRefs["\u2032"] = "\u0026prime;";
+htmlRefs["\u2033"] = "\u0026Prime;";
+htmlRefs["\u2039"] = "\u0026lsaquo;";
+htmlRefs["\u203a"] = "\u0026rsaquo;";
+htmlRefs["\u203e"] = "\u0026oline;";
+htmlRefs["\u2044"] = "\u0026frasl;";
+htmlRefs["\u20ac"] = "\u0026euro;";
+htmlRefs["\u2111"] = "\u0026image;";
+htmlRefs["\u2118"] = "\u0026weierp;";
+htmlRefs["\u211c"] = "\u0026real;";
+htmlRefs["\u2122"] = "\u0026trade;";
+htmlRefs["\u2135"] = "\u0026alefsym;";
+htmlRefs["\u2190"] = "\u0026larr;";
+htmlRefs["\u2191"] = "\u0026uarr;";
+htmlRefs["\u2192"] = "\u0026rarr;";
+htmlRefs["\u2193"] = "\u0026darr;";
+htmlRefs["\u2194"] = "\u0026harr;";
+htmlRefs["\u21b5"] = "\u0026crarr;";
+htmlRefs["\u21d0"] = "\u0026lArr;";
+htmlRefs["\u21d1"] = "\u0026uArr;";
+htmlRefs["\u21d2"] = "\u0026rArr;";
+htmlRefs["\u21d3"] = "\u0026dArr;";
+htmlRefs["\u21d4"] = "\u0026hArr;";
+htmlRefs["\u2200"] = "\u0026forall;";
+htmlRefs["\u2202"] = "\u0026part;";
+htmlRefs["\u2203"] = "\u0026exist;";
+htmlRefs["\u2205"] = "\u0026empty;";
+htmlRefs["\u2207"] = "\u0026nabla;";
+htmlRefs["\u2208"] = "\u0026isin;";
+htmlRefs["\u2209"] = "\u0026notin;";
+htmlRefs["\u220b"] = "\u0026ni;";
+htmlRefs["\u220f"] = "\u0026prod;";
+htmlRefs["\u2211"] = "\u0026sum;";
+htmlRefs["\u2212"] = "\u0026minus;";
+htmlRefs["\u2217"] = "\u0026lowast;";
+htmlRefs["\u221a"] = "\u0026radic;";
+htmlRefs["\u221d"] = "\u0026prop;";
+htmlRefs["\u221e"] = "\u0026infin;";
+htmlRefs["\u2220"] = "\u0026ang;";
+htmlRefs["\u2227"] = "\u0026and;";
+htmlRefs["\u2228"] = "\u0026or;";
+htmlRefs["\u2229"] = "\u0026cap;";
+htmlRefs["\u222a"] = "\u0026cup;";
+htmlRefs["\u222b"] = "\u0026int;";
+htmlRefs["\u2234"] = "\u0026there4;";
+htmlRefs["\u223c"] = "\u0026sim;";
+htmlRefs["\u2245"] = "\u0026cong;";
+htmlRefs["\u2248"] = "\u0026asymp;";
+htmlRefs["\u2260"] = "\u0026ne;";
+htmlRefs["\u2261"] = "\u0026equiv;";
+htmlRefs["\u2264"] = "\u0026le;";
+htmlRefs["\u2265"] = "\u0026ge;";
+htmlRefs["\u2282"] = "\u0026sub;";
+htmlRefs["\u2283"] = "\u0026sup;";
+htmlRefs["\u2284"] = "\u0026nsub;";
+htmlRefs["\u2286"] = "\u0026sube;";
+htmlRefs["\u2287"] = "\u0026supe;";
+htmlRefs["\u2295"] = "\u0026oplus;";
+htmlRefs["\u2297"] = "\u0026otimes;";
+htmlRefs["\u22a5"] = "\u0026perp;";
+htmlRefs["\u22c5"] = "\u0026sdot;";
+htmlRefs["\u2308"] = "\u0026lceil;";
+htmlRefs["\u2309"] = "\u0026rceil;";
+htmlRefs["\u230a"] = "\u0026lfloor;";
+htmlRefs["\u230b"] = "\u0026rfloor;";
+htmlRefs["\u2329"] = "\u0026lang;";
+htmlRefs["\u232a"] = "\u0026rang;";
+htmlRefs["\u25ca"] = "\u0026loz;";
+htmlRefs["\u2660"] = "\u0026spades;";
+htmlRefs["\u2663"] = "\u0026clubs;";
+htmlRefs["\u2665"] = "\u0026hearts;";
+htmlRefs["\u2666"] = "\u0026diams;";
+
+javaEscapes = new Object();
+javaEscapes["\r"] = "\\r";
+javaEscapes["\n"] = "\\n";
+javaEscapes["\t"] = "\\t";
+javaEscapes["\""] = "\\\"";
+
+function findCharCodes() {
+  if (document.forms[0].someText.value.length <= 0) {
+    document.forms[0].charCodes.value = "";
+  } else {
+    if (outputtype == "decimal") {
+      document.forms[0].charCodes.value 
+        = document.forms[0].someText.value.charCodeAt(0).toString(10);
+      for (i = 1; i < document.forms[0].someText.value.length; i++) {
+        document.forms[0].charCodes.value 
+          += ", " 
+          + document.forms[0].someText.value.charCodeAt(i).toString(10);
+      }
+    } else if (outputtype == "hexadecimal") {
+      document.forms[0].charCodes.value 
+        = "0x" +  document.forms[0].someText.value.charCodeAt(0).toString(16);
+      for (i = 1; i < document.forms[0].someText.value.length; i++) {
+        document.forms[0].charCodes.value 
+          += ", 0x" 
+          + document.forms[0].someText.value.charCodeAt(i).toString(16);
+      }
+    }
+    else if (outputtype == "html") {
+      document.forms[0].charCodes.value = "";
+      for (i = 0; i < document.forms[0].someText.value.length; i++) {
+        c = document.forms[0].someText.value.charAt(i);
+        if (htmlRefs[c] != null) {
+          document.forms[0].charCodes.value += htmlRefs[c];
+        } else if (c < "\u007F") {
+          document.forms[0].charCodes.value += c;
+        } else {
+          document.forms[0].charCodes.value 
+            += "&#x" + c.charCodeAt(0).toString(16) + ";";
+        }
+      }
+    }
+    else if (outputtype == "java")
+    {
+      document.forms[0].charCodes.value = "";
+      for (i = 0; i < document.forms[0].someText.value.length; i++)
+      {
+        c = document.forms[0].someText.value.charCodeAt(i);
+        c = document.forms[0].someText.value.charAt(i);
+        if (javaEscapes[c] != null) {
+          document.forms[0].charCodes.value += javaEscapes[c];
+        } else if (c >= "\u0020" && c < "\u007F") {
+          document.forms[0].charCodes.value += c;
+        } else {
+          c = c.charCodeAt(0);
+          document.forms[0].charCodes.value += "\\u";
+          if (c < 0x1000)
+            document.forms[0].charCodes.value += "0";
+          if (c < 0x0100)
+            document.forms[0].charCodes.value += "0";
+          if (c < 0x0010)
+            document.forms[0].charCodes.value += "0";
+          document.forms[0].charCodes.value += c.toString(16);
+        }
+      }      
+    }
+  }
+}
+
+function update(type) {
+  outputtype = type;
+  findCharCodes();
+}
+</script>
+</head>
+<body>
+<h1>Character Code Finder</h1>
+<form onsubmit="return false;">
+<p>Input:<br>
+<textarea name="someText" rows="10" cols="80" onkeyup="findCharCodes()"></textarea></p>
+<p>
+Output Style:<br>
+<input type="radio" name="outputtype" onclick="update(&#39;decimal&#39;);" checked="">Decimal Character Codes<br>
+<input type="radio" name="outputtype" onclick="update(&#39;hexadecimal&#39;);">Hexadecimal Character Codes<br>
+<input type="radio" name="outputtype" onclick="update(&#39;html&#39;);">HTML with named character references<br>
+<input type="radio" name="outputtype" onclick="update(&#39;java&#39;);">Java string<br>
+
+</p>
+<p>
+Output:<br>
+<textarea rows="10" cols="80" name="charCodes" readonly="readonly"></textarea>
+</p>
+</form>
+
+
+
+</body></html>
