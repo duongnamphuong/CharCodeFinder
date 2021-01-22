@@ -1,7 +1,8 @@
 
 <!-- saved from url=(0054)http://www.mauvecloud.net/charsets/CharCodeFinder.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Character Code Finder</title>
+<script src="jquery-1.11.1.min.js"></script>
 <script type="text/javascript">
 var outputtype = "decimal";
 
@@ -268,6 +269,13 @@ function findCharCodes() {
   if (document.forms[0].someText.value.length <= 0) {
     document.forms[0].charCodes.value = "";
   } else {
+    var imgsInner = "";
+    for (var i = 0; i < document.forms[0].someText.value.length; i++) {
+        imgsInner += '<img src="kanji/0' + document.forms[0].someText.value.charCodeAt(i).toString(16) + '.svg" style="height: 156px;" />'
+    }
+    window.imgsInner = imgsInner;
+    $("#imgs").html(imgsInner);
+    $("#hard-text").text(document.forms[0].someText.value);
     if (outputtype == "decimal") {
       document.forms[0].charCodes.value 
         = document.forms[0].someText.value.charCodeAt(0).toString(10);
@@ -331,12 +339,16 @@ function update(type) {
   findCharCodes();
 }
 </script>
+<link rel="stylesheet" href="fonts/font.css">
 </head>
 <body>
 <h1>Character Code Finder</h1>
 <form onsubmit="return false;">
 <p>Input:<br>
-<textarea name="someText" rows="10" cols="80" onkeyup="findCharCodes()"></textarea></p>
+<textarea name="someText" rows="10" cols="80" onkeyup="findCharCodes()"></textarea>
+<p></p>
+<span id="hard-text" style="font-family: Kanji Stroker;font-size: 150;"></span>
+</p>
 <p>
 Output Style:<br>
 <input type="radio" name="outputtype" onclick="update(&#39;decimal&#39;);" checked="">Decimal Character Codes<br>
